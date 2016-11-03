@@ -1,5 +1,5 @@
-test:
-	ocamlbuild -use-ocamlfind test_bit.native
+gif:
+	ocamlbuild -use-ocamlfind gif.native
 
 clean:
 	ocamlbuild -clean
