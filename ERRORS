@@ -1,0 +1,18 @@
+[using ocaml-4.03.0] $ make
+ocamlbuild -use-ocamlfind test_bit.native
++ ocamlfind ocamldep -package ppx_bitstring -package bitstring -modules test_bit.ml > test_bit.ml.depends
+File "test_bit.ml", line 15, characters 4-3792:
+Wrong pattern type
+Command exited with code 2.
+Compilation unsuccessful after building 1 target (0 cached) in 00:00:00.
+make: *** [test] Error 10
+
+
+[using ocaml-4.02.3] $ make
+ocamlbuild -use-ocamlfind test_bit.native
++ ocamlfind ocamlc -c -g -thread -package ppx_bitstring -package bitstring -o test_bit.cmo test_bit.ml
+File "test_bit.ml", line 14, characters 8-17:
+Uninterpreted extension 'bitstring'.
+Command exited with code 2.
+Compilation unsuccessful after building 2 targets (0 cached) in 00:00:00.
+make: *** [test] Error 10

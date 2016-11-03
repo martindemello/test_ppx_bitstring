@@ -1,1 +1,3 @@
 Test the ext3 example from ppx_bitstring as a standalone project.
+
+Currently not compiling; see ERRORS for details.
