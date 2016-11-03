@@ -1,0 +1,6 @@
+true: thread,debug
+
+true: package(bitstring)
+
+# preprocessing
+<**/*_bit.*>: package(ppx_bitstring)
